@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Yacht" max_length="40" name="x_295413_yachtclub_yacht" type="collection">
+        <element label="Costs" max_length="20" name="costs" type="currency"/>
+        <element label="Identifier" max_length="8" name="identifier" type="string"/>
+        <element label="in maintenance" max_length="40" name="in_maintenance" type="boolean"/>
+        <element label="Max. passengers" max_length="40" name="max_passengers" type="integer"/>
+        <element label="Model" max_length="255" name="model" type="string_full_utf8"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="sys_created_on"/>
+            <element name="sys_created_by"/>
+            <element name="identifier"/>
+            <element name="model"/>
+            <element name="number"/>
+            <element name="sys_updated_on"/>
+            <element name="sys_updated_by"/>
+            <element name="sys_mod_count"/>
+        </index>
+    </element>
+</database>
